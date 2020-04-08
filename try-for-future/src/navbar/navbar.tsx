@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
@@ -18,8 +18,9 @@ import HomeIcon from './homeicon'
 
 const NavBar:React.FC = () =>{
 
-    const classes = useStyles();
+    const [isOpen,setOpen] = useState(false)
 
+    const classes = useStyles();
 
     return(
         <>
